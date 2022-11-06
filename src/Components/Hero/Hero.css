@@ -1,0 +1,215 @@
+.hero {
+  max-width: 85vw;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.section1 section {
+  max-width: 25vw;
+  margin-left: 3em;
+}
+
+.section1 section .head {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.section1 section .head span {
+  color: aquamarine;
+}
+
+.section1 section .head2 {
+  margin-top: 1.5em;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section1 section .head3 {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.section1 section .head3 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 section .head3 a:nth-child(1) {
+  padding: 8px 15px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.section1 section .head3 a:nth-child(1) span {
+  color: white;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.section1 section .head3 a:nth-child(2) {
+  margin-left: 2em;
+  padding: 7px 20px;
+  outline: 1px solid aquamarine;
+  border-radius: 5px;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section1 section .head3 a:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: aquamarine;
+  transform: skew(35deg);
+  z-index: -2;
+  color: white;
+  transition: width 0.5s;
+}
+
+.section1 section .head3 a:nth-child(2):hover span {
+  color: white;
+}
+
+.section1 section .head3 a:nth-child(2):hover::before {
+  width: 150%;
+}
+
+.section1 section .head3 a:nth-child(2) span {
+  color: aquamarine;
+  font-weight: 600;
+  margin-right: 5px;
+  transition: color 0.4s;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 1em;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .section1 section {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .section1 section .head {
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .section1 section .head span {
+    color: aquamarine;
+  }
+
+  .section1 section .head2 {
+    margin-top: 1.5em;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .section1 section .head3 {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .section1 section .head3 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 section .head3 a:nth-child(1) {
+    padding: 8px 15px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .section1 section .head3 a:nth-child(1) span {
+    color: white;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+
+  .section1 section .head3 a:nth-child(2) {
+    margin-left: 2em;
+    padding: 7px 20px;
+    outline: 1px solid aquamarine;
+    border-radius: 5px;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section1 section .head3 a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: aquamarine;
+    transform: skew(35deg);
+    z-index: -2;
+    color: white;
+    transition: width 0.5s;
+  }
+
+  .section1 section .head3 a:nth-child(2):hover span {
+    color: white;
+  }
+
+  .section1 section .head3 a:nth-child(2):hover::before {
+    width: 150%;
+  }
+
+  .section1 section .head3 a:nth-child(2) span {
+    color: aquamarine;
+    font-weight: 600;
+    margin-right: 5px;
+    transition: color 0.4s;
+  }
+}
+
+@media screen and (min-width: 601px) and  (max-width: 960px) {
+  .hero {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .section1 section {
+    max-width: 40vw;
+    margin-left: 0;
+  }
+}

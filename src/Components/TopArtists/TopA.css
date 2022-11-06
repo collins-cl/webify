@@ -1,0 +1,146 @@
+.topart {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 6em;
+}
+
+.topart-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topart-wrapper .header .head-1 .h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.topart-wrapper .header .head-1 .h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.topart-wrapper .header .head-2 {
+  margin-top: -30px;
+}
+
+.topart-wrapper .header .head-2 a {
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.topart-wrapper .header .head-2 a::after {
+  content: "";
+  position: absolute;
+  top: 2em;
+  right: 2px;
+  height: 3px;
+  width: 0;
+  background-color: aquamarine;
+  transition: width 0.5s;
+}
+
+.topart-wrapper .header .head-2 a:hover::after {
+  width: 4em;
+}
+
+.topart-artists {
+  max-width: 70vw;
+  margin-top: 3em;
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topart-artists > div {
+  margin: 15px;
+}
+
+.artist-info {
+  display: flex;
+  align-items: center;
+}
+
+.artist-info .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: rgb(187, 214, 238);
+}
+
+.artist-info .info {
+  margin-left: 10px;
+}
+
+.artist-info .info .name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.artist-info .info .price {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .topart {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 6em;
+  }
+
+  .topart-wrapper .header {
+    width: 100%;
+  }
+
+  .topart-wrapper .header .head-1 {
+    max-width: 60vw;
+  }
+
+  .topart-artists {
+    max-width: 90vw;
+    height: 70vh;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+  }
+
+  .topart-artists::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topart-artists > div {
+    margin: 10px 0;
+  }
+
+  .artist-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .artist-info .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: rgb(187, 214, 238);
+  }
+
+  .artist-info .info {
+    margin-left: 10px;
+  }
+
+  .artist-info .info .name {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .artist-info .info .price {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
