@@ -8,6 +8,7 @@ const DummyData = [
     price: 5.1,
     countdown:
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 1056,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const DummyData = [
     price: 4.3,
     countdown:
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+      likes :2290
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const DummyData = [
     price: 2.9,
     countdown:
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 124,
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ const DummyData = [
     price: 3.1,
     countdown:
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 234,
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ const DummyData = [
     price: 4.8,
     countdown:
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 514,
   },
   {
     id: 6,
@@ -48,6 +53,7 @@ const DummyData = [
     price: 5.1,
     countdown:
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 423,
   },
 ];
 

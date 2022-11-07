@@ -1,5 +1,153 @@
-.pcollections{
-    max-width: 80vw;
+.pcollections {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.pcollections .pcollections-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pcollections-wrapper .header .head-1 .h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.pcollections-wrapper .header .head-1 .h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pcollections-wrapper .header .head-2 {
+  margin-top: -30px;
+}
+
+.pcollections-wrapper .header .head-2 a {
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.pcollections-wrapper .header .head-2 a::after {
+  content: "";
+  position: absolute;
+  top: 2em;
+  left: 2px;
+  height: 3px;
+  width: 0;
+  background-color: aquamarine;
+  transition: width 0.5s;
+}
+
+.pcollections-wrapper .header .head-2 a:hover::after {
+  width: 5em;
+}
+
+.artists-collections {
+  margin-top: 5em;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.artists-collections::-webkit-scrollbar {
+  display: none;
+}
+
+.artists-collections > div {
+  margin: 0 8px;
+}
+.artists-collections .container {
+  outline: 1px solid aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.artists-collections .container .image-container {
+  width: 250px;
+  height: 180px;
+  position: relative;
+}
+
+.image-container .img-wrapper img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.image-container .img-wrapper .likes {
+  position: absolute;
+  right: 0;
+  margin-right: 13px;
+  top: 0;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  padding: 4px 7px;
+  border-radius: 8px;
+  background-color: aquamarine;
+  font-size: 13px;
+  color: white;
+}
+
+.image-container .img-wrapper .likes p {
+  margin-left: 4px;
+}
+
+.image-container .avatar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 6.2em;
+  margin-bottom: -25px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(219, 219, 219);
+}
+
+.artists-collections .container .title {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.artists-collections .container .owner {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 960px) {
+  .pcollections {
+    max-width: 90vw;
     margin: auto;
-    margin-top: 5em;
+    margin-top: 6em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pcollections {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 6em;
+  }
+
+  .pcollections-wrapper .header .head-1{
+    max-width: 50vw;
+  }
+
+  .pcollections-wrapper .header .head-1 .h1{
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
 }

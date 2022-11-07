@@ -1,0 +1,164 @@
+.reasons {
+  margin-top: 6em;
+  background-color: rgb(225, 255, 244);
+  height: 300px;
+  position: relative;
+}
+
+.reasons-wrapper {
+  max-width: 80vw;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+.reasons .reasons-wrapper .header {
+  padding-top: 2em;
+}
+
+.reasons-wrapper .header .head-1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.reasons-wrapper .header .head-2 {
+  font-size: 14px;
+}
+
+.reasons-wrapper .container {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -5em;
+  display: flex;
+  align-items: center;
+}
+
+.reasons-wrapper .container > div {
+  width: 290px;
+  height: 170px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: aquamarine;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.reasons-wrapper .container > div .h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.reasons-wrapper .container > div p {
+  font-size: 13px;
+  margin-top: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .reasons {
+    margin-top: 6em;
+    background-color: rgb(225, 255, 244);
+    height: 300px;
+    position: relative;
+    overflow: scroll;
+  }
+
+  .reasons-wrapper {
+    max-width: 90vw;
+    margin: auto;
+    position: relative;
+    height: 100%;
+  }
+
+  .reasons-wrapper .container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reasons-wrapper .container > div {
+    width: 250px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reasons {
+    margin-top: 6em;
+    background-color: rgb(225, 255, 244);
+    height: 300px;
+    position: relative;
+    overflow: scroll;
+  }
+
+  .reasons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .reasons-wrapper {
+    max-width: 90vw;
+    margin: auto;
+    position: relative;
+    height: 100%;
+  }
+
+  .reasons .reasons-wrapper .header {
+    padding-top: 2em;
+  }
+
+  .reasons-wrapper .header .head-1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .reasons-wrapper .header .head-2 {
+    font-size: 14px;
+  }
+
+  .reasons-wrapper .container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -50vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .reasons-wrapper .container > div {
+    width: 290px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reasons-wrapper .container > div .h1 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .reasons-wrapper .container > div p {
+    font-size: 13px;
+    margin-top: 10px;
+    color: black;
+  }
+}
