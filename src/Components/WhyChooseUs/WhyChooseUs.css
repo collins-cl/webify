@@ -61,9 +61,9 @@
   .reasons {
     margin-top: 6em;
     background-color: rgb(225, 255, 244);
-    height: 300px;
+    height: 50vh;
     position: relative;
-    overflow: scroll;
+    overflow: none;
   }
 
   .reasons-wrapper {
@@ -76,7 +76,7 @@
   .reasons-wrapper .container {
     position: absolute;
     bottom: 0;
-    margin-bottom: -8em;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -1,0 +1,189 @@
+.newsletter {
+  max-width: 80vw;
+  height: 280px;
+  margin: auto;
+  background-color: rgb(225, 255, 244);
+  border-radius: 32px;
+  margin-top: 5em;
+}
+
+.newsletter-wrapper {
+  padding: 0 4em;
+  height: 100%;
+  max-width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.newsletter-wrapper .heading {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.newsletter-wrapper .info {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.newsletter .letter {
+  position: relative;
+  margin-top: 1em;
+  display: flex;
+}
+
+.newsletter-wrapper .letter input {
+  width: 90%;
+  padding: 10px 1em;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+}
+
+.newsletter-wrapper .letter input::placeholder {
+  font-size: 15px;
+}
+
+.newsletter-wrapper .letter button {
+  padding: 11px 1em;
+  position: absolute;
+  right: 0;
+  margin-right: 3.5em;
+  border-radius: 10px;
+  border: none;
+  background-color: aquamarine;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .newsletter {
+    max-width: 90vw;
+    height: auto;
+    margin: auto;
+    background-color: rgb(225, 255, 244);
+    border-radius: 25px;
+    margin-top: 4em;
+  }
+
+  .newsletter-wrapper {
+    padding:  1em;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .newsletter-wrapper .heading {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0;
+    max-width: 40vw;
+  }
+
+  .newsletter-wrapper .info {
+    display: none;
+  }
+
+  .newsletter .letter {
+    position: relative;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .newsletter-wrapper .letter input {
+    width: 40vw;
+    height: 3em;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .newsletter-wrapper .letter button {
+    padding: 15px 1em;
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+    border-radius: 5px;
+    border: none;
+    background-color: aquamarine;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .newsletter {
+    max-width: 90vw;
+    height: 25vh;
+    margin: auto;
+    background-color: rgb(225, 255, 244);
+    border-radius: 32px;
+    margin-top: 5em;
+  }
+
+  .newsletter-wrapper {
+    padding: 0;
+    height: 100%;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-wrapper .heading {
+    margin-top: 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    max-width: 100%;
+  }
+
+  .newsletter .letter {
+    position: relative;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .newsletter-wrapper .letter input {
+    width: 80vw;
+    margin: auto;
+    padding: 8px 1em;
+    height: 3em;
+  }
+
+  .newsletter-wrapper .letter button {
+    padding: 15px 1em;
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .newsletter-wrapper .heading {
+    margin-top: 0;
+    font-size: 1em;
+  }
+
+  .newsletter-wrapper .info {
+    font-size: 13px;
+  }
+}

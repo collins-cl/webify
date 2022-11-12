@@ -179,6 +179,26 @@
   width: 150%;
 }
 
+@media screen and (max-width: 960px) {
+  .auction {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 6em;
+  }
+
+  .auctions {
+    margin-top: 3em;
+    padding: 10px;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+  }
+
+  .auctions::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .auction {
     max-width: 90vw;
@@ -195,8 +215,7 @@
     margin-top: 10px;
   }
 
-  
-.auctions {
+  .auctions {
     margin-top: 3em;
     padding: 10px;
     overflow-x: scroll;

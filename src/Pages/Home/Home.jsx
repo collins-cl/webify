@@ -2,6 +2,7 @@ import React from "react";
 import Auction from "../../Components/Auction/Auction";
 import Faqs from "../../Components/FAQ/Faqs";
 import Hero from "../../Components/Hero/Hero";
+import Newsletter from "../../Components/Newsletter/Newsletter";
 import PCollections from "../../Components/PopularCollections/PCollections";
 import Steps from "../../Components/Steps/Steps";
 import TopA from "../../Components/TopArtists/TopA";
@@ -16,12 +17,8 @@ const Home = () => {
       <TopA />
       <PCollections />
       <WhyChooseUs />
-      <Faqs/>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
+      <Faqs />
+      <Newsletter />
     </div>
   );
 };
