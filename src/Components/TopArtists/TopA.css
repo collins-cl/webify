@@ -147,7 +147,7 @@
 
   .topart-artists {
     max-width: 90vw;
-    height: 70vh;
+    height: 50vh;
     margin-top: 3em;
     display: flex;
     flex-direction: column;
