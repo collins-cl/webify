@@ -2,7 +2,8 @@
   max-width: 80vw;
   margin: auto;
   margin-top: 10em;
-  padding-bottom: 4em;
+  padding: 4em 0;
+  border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
 

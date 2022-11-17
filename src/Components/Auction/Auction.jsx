@@ -1,12 +1,14 @@
 import React from "react";
 import "../Auction/Auction.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsThreeDots } from "react-icons/bs";
 import { MdAlarm } from "react-icons/md";
 import DummyData from "../DummyData";
 
 const Auction = () => {
   const data = DummyData;
+
+  const navigate = useNavigate();
 
   return (
     <div className="auction">
@@ -20,14 +22,14 @@ const Auction = () => {
           </div>
 
           <div className="header-2">
-            <Link>Explore More</Link>
+            <Link to="auction">Explore More</Link>
           </div>
         </div>
 
         <div className="auctions">
           {data &&
-            data.map((item) => (
-              <div className="a-box">
+            data.map((item, id) => (
+              <div className="a-box" key={item.id}>
                 <div className="img">
                   <div className="img-box"></div>
                   <div className="countdown">
@@ -49,9 +51,11 @@ const Auction = () => {
                     </div>
                   </div>
 
-                  <div className="price">{item.price }ETH</div>
+                  <div className="price">{item.price}ETH</div>
                 </div>
-                <div className="place-bid">Place Bid</div>
+                <div className="place-bid" onClick={() => navigate(`/auction/item/${item.title}`)}>
+                  Mint
+                </div>
               </div>
             ))}
         </div>

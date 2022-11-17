@@ -23,8 +23,8 @@ const PCollections = () => {
 
         <div className="artists-collections">
           {data &&
-            data.map((item) => (
-              <div className="container">
+            data.map((item,id) => (
+              <div className="container" key={id}>
                 <div className="image-container">
                   <div className="img-wrapper">
                     <img src={CoverPhoto} alt="" />

@@ -23,8 +23,8 @@ const TopA = () => {
 
         <div className="topart-artists">
           {data &&
-            data.map((item) => (
-              <div className="artist-info">
+            data.map((item, id) => (
+              <div className="artist-info" key={id}>
                 <div className="img"></div>
                 <div className="info">
                   <div className="name">{item.owner}</div>

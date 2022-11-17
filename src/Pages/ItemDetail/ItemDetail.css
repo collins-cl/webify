@@ -53,7 +53,7 @@
   color: white;
   font-weight: 600;
   border-radius: 5px;
-  background-color:rgb(0, 255, 170);
+  background-color: rgb(0, 255, 170);
 }
 
 .item-description .info {
@@ -141,7 +141,7 @@
 
 .item-description .actions > div {
   padding: 8px 5em;
-  border: 1px solid aquamarine;
+  border: 1px solid rgb(8, 243, 165);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -161,7 +161,7 @@
   width: 0;
   height: 150%;
   transform: skew(27deg);
-  background-color: aquamarine;
+  background-color: rgb(8, 243, 165);
   transition: width 0.5s;
 }
 
@@ -174,7 +174,7 @@
 }
 
 .item-description .actions .buy {
-  background-color: rgb(3, 209, 140);
+  background-color: rgb(8, 243, 165);
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -368,14 +368,13 @@
   }
 }
 
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .itemdetail {
     max-width: 95vw;
     margin: auto;
     margin-top: 1em;
   }
-  
+
   .itemdetail-container {
     padding-top: 1em;
     display: flex;
@@ -383,17 +382,17 @@
     width: 100%;
     justify-content: space-between;
   }
-  
+
   .itemdetail-container .item-image {
     width: 100%;
     height: 400px;
   }
-  
+
   .itemdetail-container .item-description {
     max-width: 100%;
     margin-top: 2em;
   }
-  
+
   .itemdetail-container .item-description .activities {
     display: flex;
     justify-content: space-between;
@@ -401,76 +400,74 @@
     width: 50%;
     margin-top: 10px;
   }
-  
+
   .item-description .info {
     margin-top: 1em;
   }
-  
+
   .item-description .info .head {
     font-size: 16px;
     font-weight: bold;
   }
-  
-  
+
   .item-description .owner {
     width: 70%;
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .item-description .owner .created-by {
     display: flex;
   }
-  
+
   .item-description .owner .created-by .img {
     width: 40px;
     height: 40px;
   }
-  
+
   .item-description .owner .created-by .person {
     margin-left: 7px;
   }
-  
+
   .item-description .owner .created-by .person .name {
     font-size: 14px;
     font-weight: bold;
   }
-  
+
   .item-description .owner .created-by .person p {
     font-size: 13px;
   }
-  
+
   .item-description .owner .collection .name {
     font-size: 14px;
     font-weight: bold;
   }
-  
+
   .item-description .owner .collection .title {
     font-size: 13px;
     font-weight: normal;
   }
-  
+
   .item-description .price .amount {
     margin-top: 5px;
     font-size: 19px;
     font-weight: 600;
   }
-  
+
   .item-description .actions {
     margin-top: 1em;
     width: 90%;
   }
-  
+
   .item-description .actions > div {
     padding: 8px 4em;
   }
-  
+
   .item-description .events {
     margin-top: 2em;
   }
-  
-  
+
   .item-description .events .b-history .title::before {
     content: "";
     position: absolute;
@@ -480,7 +477,7 @@
     left: 0;
     background-color: rgb(4, 255, 171);
   }
-  
+
   .item-description .events .histories .section .avatar {
     width: 40px;
     height: 40px;
@@ -490,10 +487,9 @@
     font-size: 14px;
     font-weight: bold;
   }
-
 }
 
-@media screen and  (max-width:375px) {
+@media screen and (max-width: 375px) {
   .item-description .actions {
     margin-top: 1em;
     width: 90%;

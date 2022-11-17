@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import Navbar from "./Components/NavBar/Navbar";
 import ItemDetail from "./Pages/ItemDetail/ItemDetail";
 import Footer from "./Components/Footer/Footer";
+import LiveAuction from "./Pages/LiveAuction/LiveAuction";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/item" element={<ItemDetail />} />
+          <Route path="/auction" element={<LiveAuction />} />
+          <Route path="/auction/item/:title" element={<ItemDetail />} />
         </Routes>
         <Footer />
         <div className="box3">

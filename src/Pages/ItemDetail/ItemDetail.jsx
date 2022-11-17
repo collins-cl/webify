@@ -1,7 +1,20 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import DummyData from "../../Components/DummyData";
 import "../ItemDetail/ItemDetail.css";
 
 const ItemDetail = () => {
+  const { title } = useParams();
+  const [data, setData] = useState([]);
+  const res = DummyData;
+
+  useEffect(() => {
+    // setData(res[id?.[0]])
+    console.log(data);
+  }, [data, res, title]);
+
   return (
     <div className="itemdetail">
       <div className="itemdetail-container">
@@ -50,19 +63,19 @@ const ItemDetail = () => {
           </div>
 
           <div className="actions">
-            <div className="bid">Place Bid</div>
+            <div className="bid">Add To Cart</div>
 
-            <div className="buy">Buy Now</div>
+            <div className="buy">Mint Now</div>
           </div>
 
           <div className="events">
             <div className="b-history">
-              <div className="title">Bid History</div>
+              <div className="title">Buy History</div>
               <div className="histories">
                 <div className="section">
                   <div className="avatar"></div>
                   <div className="activities">
-                    <div className="activities-amount">Bid 0.003ETH</div>
+                    <div className="activities-amount">Bought 0.003ETH</div>
                     <div className="activities-details">
                       By <span>Collins</span> at 12/11/2022
                     </div>

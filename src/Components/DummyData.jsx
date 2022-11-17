@@ -10,7 +10,7 @@ const DummyData = [
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
     likes: 1056,
   },
-  {
+{
     id: 2,
     title: "Extraterrestrial",
     owner: "Kulay00",
@@ -54,6 +54,33 @@ const DummyData = [
     countdown:
       date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
     likes: 423,
+  },
+  {
+    id: 7,
+    title: "Abstract Nature",
+    owner: "Collins Olads",
+    price: 5.1,
+    countdown:
+      date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 423,
+  },
+  {
+    id: 8,
+    title: "Abstract Nature",
+    owner: "Collins Olads",
+    price: 5.1,
+    countdown:
+      date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 423,
+  },
+  {
+    id: 9,
+    title: "Abstract Nature",
+    owner: "Collins Olads",
+    price: 5.1,
+    countdown:
+      date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    likes: 403,
   },
 ];
 

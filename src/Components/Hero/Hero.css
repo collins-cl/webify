@@ -1,7 +1,7 @@
 .hero {
   max-width: 85vw;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .hero-wrapper {
@@ -45,7 +45,7 @@
 .section1 section .head3 a:nth-child(1) {
   padding: 8px 15px;
   background-color: aquamarine;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   font-size: 14px;
 }

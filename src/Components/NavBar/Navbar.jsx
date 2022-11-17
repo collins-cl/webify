@@ -53,7 +53,7 @@ const Navbar = () => {
             <Link onClick={handleClose}>Contact Us</Link>
           </div>
 
-          <div className="lorem">Lorem</div>
+          <div className="lorem">Log In</div>
 
           {opennav ? hamClose : hamOPen}
         </div>
