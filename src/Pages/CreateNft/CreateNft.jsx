@@ -13,7 +13,7 @@ const initialState = {
 
 const CreateNft = () => {
   const [state, setState] = useState(initialState);
-  const [hidemodal, setHideModal] = useState(true);
+  const [hidemodal, setHideModal] = useState(false);
 
   const handleState = (e) => {
     const { name, value } = e.target;
