@@ -50,11 +50,13 @@
   font-weight: 400;
 }
 
-.lorem {
+.login-button {
   color: white;
-  background-color: aquamarine;
-  padding: 5px 15px;
+  background-color: rgb(2, 251, 168);
+  font-size: 14px;
+  padding: 5px 2em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .nav-active {
@@ -135,6 +137,85 @@
 
 .hamburger {
   display: none;
+}
+
+.mint-cart {
+  position: relative;
+}
+
+.mint-cart p {
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  top: 0;
+  right: 0;
+  margin-right: -10px;
+  margin-top: -7px;
+  background-color: red;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-box {
+  position: relative;
+}
+
+.profile-box-avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: 1px solid black;
+  background-color: lightgray;
+}
+
+.profile-box-options {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 1px 4px 1px rgba(119, 119, 119, 0.598);
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  right: 0;
+  margin-right: -10px;
+  top: 0;
+  margin-top: 3.27em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-box-options .profile-name {
+  width: 80%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+
+.profile-box-options > a {
+  margin: 3px 0;
+  font-size: 14px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.profile-box-options .logout {
+  font-size: 13px;
+  padding: 5px 0;
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(7, 249, 168);
 }
 
 @media screen and (max-width: 600px) {
@@ -284,7 +365,8 @@
     display: block;
   }
 
-  .nav-wrapper .wrapper .searchbar input, .nav-active .wrapper .searchbar input{
+  .nav-wrapper .wrapper .searchbar input,
+  .nav-active .wrapper .searchbar input {
     width: 30vw;
   }
 

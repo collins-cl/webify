@@ -10,10 +10,14 @@ const ItemDetail = () => {
   const [data, setData] = useState([]);
   const res = DummyData;
 
+  // const handleData = () => {};
+
   useEffect(() => {
-    // setData(res[id?.[0]])
+    const newData = res.filter((el) => el.title === title);
+    setData(newData[0]);
     console.log(data);
-  }, [data, res, title]);
+    console.log(newData);
+  }, [data, title, res]);
 
   return (
     <div className="itemdetail">
@@ -22,12 +26,12 @@ const ItemDetail = () => {
           <div className="img"></div>
         </div>
         <div className="item-description">
-          <div className="title">Abstract Nature</div>
+          <div className="title">{data.title}</div>
 
           <div className="activities">
-            <div className="countdown">12:22:22</div>
+            <div className="countdown">{data.countdown}</div>
             <div className="watching">550</div>
-            <div className="likes">1023</div>
+            <div className="likes">{data.likes}</div>
           </div>
 
           <div className="info">
@@ -45,20 +49,20 @@ const ItemDetail = () => {
               <div className="img"></div>
               <div className="person">
                 <div className="name">Created By</div>
-                <p>Collins Olads</p>
+                <p>{data.owner}</p>
               </div>
             </div>
 
             <div className="collection">
               <div className="name">Collection</div>
-              <div className="title">Abstract Attractive</div>
+              <div className="title">{data.title}</div>
             </div>
           </div>
 
           <div className="price">
             <p>Price</p>
             <div className="amount">
-              0.0043ETH <span>($352.42)</span>
+              {data.price}ETH <span>($352.42)</span>
             </div>
           </div>
 

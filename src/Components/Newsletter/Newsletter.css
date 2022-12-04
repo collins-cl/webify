@@ -49,10 +49,10 @@
 }
 
 .newsletter-wrapper .letter button {
-  padding: 11px 1em;
+  padding: 12px 1em;
   position: absolute;
   right: 0;
-  margin-right: 3.5em;
+  margin-right: 3em;
   border-radius: 10px;
   border: none;
   background-color: aquamarine;

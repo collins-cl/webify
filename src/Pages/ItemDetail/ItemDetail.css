@@ -92,18 +92,14 @@
   margin-left: 5px;
 }
 
-.item-description .owner .created-by .person .name {
-  font-size: 15px;
-  font-weight: bold;
+.item-description .owner .created-by .person .name,
+.item-description .owner .collection .name {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .item-description .owner .created-by .person p {
   font-size: 14px;
-}
-
-.item-description .owner .collection .name {
-  font-size: 15px;
-  font-weight: bold;
 }
 
 .item-description .owner .collection .title {
@@ -133,7 +129,7 @@
 
 .item-description .actions {
   margin-top: 1em;
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -185,7 +181,7 @@
 }
 
 .item-description .events .b-history .title {
-  font-size: 1em;
+  font-size: .9em;
   position: relative;
 }
 
@@ -235,8 +231,8 @@
 }
 
 .item-description .events .histories .section .activities .activities-amount {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .item-description .events .histories .section .activities .activities-details {

@@ -61,11 +61,13 @@
 .artist-info {
   display: flex;
   align-items: center;
+  width: 200px;
+  height: 100px;
 }
 
 .artist-info .img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 5px;
   background-color: rgb(187, 214, 238);
 }

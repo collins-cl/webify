@@ -33,7 +33,7 @@ const Auction = () => {
                 <div className="img">
                   <div className="img-box"></div>
                   <div className="countdown">
-                    <MdAlarm color="white" className="white" />{" "}
+                    <MdAlarm color="white" className="white" />
                     <p>{item.countdown}</p>
                   </div>
                 </div>
