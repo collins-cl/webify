@@ -23,16 +23,23 @@ const PCollections = () => {
 
         <div className="artists-collections">
           {data &&
-            data.map((item,id) => (
+            data.map((item, id) => (
               <div className="container" key={id}>
                 <div className="image-container">
                   <div className="img-wrapper">
-                    <img src={CoverPhoto} alt="" />
+                    <img
+                      width={200}
+                      height={170}
+                      src={`https://picsum.photos/id/${item.imageId}/200/300`}
+                      alt=""
+                    />
                     <div className="likes">
                       <AiOutlineHeart /> <p>{item.likes}</p>
                     </div>
                   </div>
-                  <div className="avatar"></div>
+                  <div className="avatar">
+                    {item.owner.split(" ")[0].split("")[0]}
+                  </div>
                 </div>
                 <div className="title">{item.title}</div>
                 <div className="owner">Created by {item.owner}</div>

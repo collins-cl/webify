@@ -127,7 +127,13 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgb(216, 216, 216);
+  background-color: lightgray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .a-box .user {

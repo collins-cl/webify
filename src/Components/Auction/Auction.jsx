@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Auction/Auction.css";
 import { Link, useNavigate } from "react-router-dom";
 import { BsThreeDots } from "react-icons/bs";
@@ -6,7 +6,16 @@ import { MdAlarm } from "react-icons/md";
 import DummyData from "../DummyData";
 
 const Auction = () => {
-  const data = DummyData;
+  const datas = DummyData;
+
+  const [data, setData] = useState(datas);
+  const [avatar, setAvatar] = useState("");
+
+  // useEffect(() => {
+  //   const initial = data.filter((el) => el.id === datas.id);
+
+  //   console.log(initial);
+  // }, [data]);
 
   const navigate = useNavigate();
 
@@ -51,7 +60,7 @@ const Auction = () => {
 
                 <div className="details">
                   <div className="info">
-                    <div className="avatar"></div>
+                    <div className="avatar">{item.owner[0]}</div>
                     <div className="user">
                       <div className="owner">Created by</div>
                       <div className="name">{item.owner}</div>

@@ -22,15 +22,22 @@ const ItemDetail = () => {
   useEffect(() => {
     const newData = res.filter((el) => el.title === title);
     setData(newData[0]);
-    console.log(data);
-    console.log(newData);
+    // console.log(data);
+    // console.log(newData);
   }, [data, title, res]);
 
   return (
     <div className="itemdetail">
       <div className="itemdetail-container">
         <div className="item-image">
-          <div className="img"></div>
+          <div className="img">
+            <img
+              width={400}
+              height={400}
+              src={`https://picsum.photos/id/${data.imageId}/400/300`}
+              alt=""
+            />
+          </div>
         </div>
         <div className="item-description">
           <div className="title">{data.title}</div>

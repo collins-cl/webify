@@ -84,6 +84,11 @@
 .item-description .owner .created-by .img {
   width: 50px;
   height: 50px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: lightgray;
   border-radius: 5px;
 }
@@ -180,7 +185,7 @@
   font-weight: bold;
 }
 
-.item-description .actions .buy div{
+.item-description .actions .buy div {
   color: white;
 }
 

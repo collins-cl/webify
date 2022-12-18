@@ -25,7 +25,14 @@ const TopA = () => {
           {data &&
             data.map((item, id) => (
               <div className="artist-info" key={id}>
-                <div className="img"></div>
+                <div className="img">
+                  {item.owner.split(" ")[0].split("")[0]}{" "}
+                  {
+                    item.owner
+                      .split(" ")
+                      [item.owner.split(" ").length - 1].split("")[0]
+                  }
+                </div>
                 <div className="info">
                   <div className="name">{item.owner}</div>
                   <div className="price">{item.price} ETH</div>
