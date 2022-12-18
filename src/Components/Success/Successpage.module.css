@@ -1,0 +1,52 @@
+.container {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.head {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link {
+  margin-top: 10px;
+  font-size: 13px;
+  outline: 1px solid rgb(6, 251, 169);
+  width: 15em;
+  height: 30px;
+  padding: 5px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 0;
+  transform: skew(35deg);
+  background-color: rgb(14, 254, 174);
+  transition: width 0.5s;
+  z-index: -1;
+}
+
+.link:hover {
+  color: white;
+  font-weight: 500;
+}
+
+.link:hover::after {
+  width: 20em;
+}

@@ -31,7 +31,14 @@ const Auction = () => {
             data.map((item, id) => (
               <div className="a-box" key={item.id}>
                 <div className="img">
-                  <div className="img-box"></div>
+                  <div className="img-box">
+                    <img
+                      width={200}
+                      height={170}
+                      src={`https://picsum.photos/id/${item.imageId}/200/300`}
+                      alt=""
+                    />
+                  </div>
                   <div className="countdown">
                     <MdAlarm color="white" className="white" />
                     <p>{item.countdown}</p>
@@ -53,7 +60,10 @@ const Auction = () => {
 
                   <div className="price">{item.price}ETH</div>
                 </div>
-                <div className="place-bid" onClick={() => navigate(`/auction/item/${item.title}`)}>
+                <div
+                  className="place-bid"
+                  onClick={() => navigate(`/auction/item/${item.title}`)}
+                >
                   Mint
                 </div>
               </div>

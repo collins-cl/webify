@@ -1,0 +1,15 @@
+.loading-icon {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  border: 2px solid white;
+  border-top: black;
+  border-radius: 50%;
+  animation: rotate 1.4s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

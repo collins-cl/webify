@@ -6,6 +6,7 @@ import ItemDetail from "./Pages/ItemDetail/ItemDetail";
 import Footer from "./Components/Footer/Footer";
 import LiveAuction from "./Pages/LiveAuction/LiveAuction";
 import CreateNft from "./Pages/CreateNft/CreateNft";
+import SuccessPage from "./Components/Success/SuccessPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/auction" element={<LiveAuction />} />
           <Route path="/auction/item/:title" element={<ItemDetail />} />
           <Route path="/createnft" element={<CreateNft />} />
+          <Route path="/success" element={<SuccessPage />} />
         </Routes>
         <Footer />
         <div className="box3">

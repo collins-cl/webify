@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import css from "../CreateNft/CreateNft.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const initialState = {
   name: "",
@@ -12,6 +12,7 @@ const initialState = {
 };
 
 const CreateNft = () => {
+  const navigate = useNavigate();
   const [state, setState] = useState(initialState);
   const [hidemodal, setHideModal] = useState(false);
 
@@ -30,6 +31,9 @@ const CreateNft = () => {
     const stateData = JSON.stringify(state);
     localStorage.setItem("item", stateData);
     setHideModal(false);
+    setTimeout(() => {
+      navigate("/success");
+    }, 1000);
     console.log(state);
   };
 

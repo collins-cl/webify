@@ -80,7 +80,7 @@
   height: 170px;
   width: 200px;
   border-radius: 10px;
-  background-color: rgb(216, 214, 214);
+  overflow: hidden;
 }
 
 .a-box .img .countdown {

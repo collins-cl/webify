@@ -3,14 +3,21 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import DummyData from "../../Components/DummyData";
+import Loading from "../../Components/Loading/Loading";
 import "../ItemDetail/ItemDetail.css";
 
 const ItemDetail = () => {
   const { title } = useParams();
   const [data, setData] = useState([]);
+  const [mintsuccess, setMintSuccess] = useState(false);
   const res = DummyData;
 
-  // const handleData = () => {};
+  const handleMint = () => {
+    setMintSuccess(true);
+    setTimeout(() => {
+      setMintSuccess(false);
+    }, 2000);
+  };
 
   useEffect(() => {
     const newData = res.filter((el) => el.title === title);
@@ -69,7 +76,9 @@ const ItemDetail = () => {
           <div className="actions">
             <div className="bid">Add To Cart</div>
 
-            <div className="buy">Mint Now</div>
+            <div className="buy">
+              {mintsuccess ? <Loading /> : <div onClick={handleMint}>Mint</div>}
+            </div>
           </div>
 
           <div className="events">
